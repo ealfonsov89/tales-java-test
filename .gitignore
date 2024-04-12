@@ -33,3 +33,6 @@ replay_pid*
 # Spring Boot IDE files
 /.idea/
 /.gradle/
+.gradle/*
+.gradle
+build/
