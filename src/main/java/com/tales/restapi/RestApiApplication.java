@@ -1,13 +1,13 @@
-package com.tales.test;
+package com.tales.restapi;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-
 @SpringBootApplication
-public class TestApplication {
+public class RestApiApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(TestApplication.class, args);
+		SpringApplication.run(RestApiApplication.class, args);
 	}
+
 }

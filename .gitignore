@@ -36,3 +36,8 @@ replay_pid*
 .gradle/*
 .gradle
 build/
+# Build folder
+/build/
+bin
+bin/
+
