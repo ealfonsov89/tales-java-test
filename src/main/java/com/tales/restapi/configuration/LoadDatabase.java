@@ -6,8 +6,7 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import com.tales.restapi.entity.Employee;
-import com.tales.restapi.repository.EmployeeRepository;
+import com.tales.restapi.repository.ParkingRepository;
 
 @Configuration
 class LoadDatabase {
@@ -15,11 +14,15 @@ class LoadDatabase {
   private static final Logger log = LoggerFactory.getLogger(LoadDatabase.class);
 
   @Bean
-  CommandLineRunner initDatabase(EmployeeRepository repository) {
+  CommandLineRunner initDatabase(ParkingRepository repository) {
 
     return args -> {
-      log.info("Preloading " + repository.save(new Employee("Bilbo Baggins", "burglar")));
-      log.info("Preloading " + repository.save(new Employee("Frodo Baggins", "thief")));
+      /*
+       * log.info("Preloading " + repository.save(new Employee("Bilbo Baggins",
+       * "burglar")));
+       * log.info("Preloading " + repository.save(new Employee("Frodo Baggins",
+       * "thief")));
+       */
     };
   }
 }
